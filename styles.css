@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* basic classes */
+.wrap-outer {
+  max-width: 1404px;
+  margin: 0 auto;
+}
+
+.wrap-inner {
+  max-width: 1172px;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 105px;
+  background-color: #2870db;
+  color: #fcfcfc;
+  height: 80px;
+  line-height: 80px;
+  /* border-radius: ; */
+  font-size: 20px;
+  padding: 0 80px;
+  border-radius: 40px;
+  font-family: OpenSans, sans-serif;
+  box-shadow: 0px 22px 24px rgba(17, 83, 165, 0.21);
+}
+.btn:hover {
+  background-color: #225eb6;
+}
+
+/* header */
+header {
+  height: 1000px;
+  background-color: white;
+  background-image: url(images/bubble-left.png), url(images/banner.png);
+  background-repeat: no-repeat no-repeat;
+  background-position: left bottom, right top;
+  background-size: 100px, 1080px;
+  padding-top: 85px;
+}
+
+header #top {
+  display: flex;
+  justify-content: space-between;
+}
+
+header #top ul li {
+  display: inline-block;
+}
+
+header #top ul li a {
+  display: inline-block;
+  height: 36px;
+  color: white;
+  padding: 0 36px;
+  line-height: 36px;
+  /* line height từ mép chữ -> mép border*/
+  font-size: 18px;
+  font-family: OpenSans, sans-serif;
+  font-weight: 400;
+}
+
+header #top ul li a.highlight {
+  background-color: white;
+  color: #14215e;
+  border-radius: 18px;
+}
+
+#jumbostron h1 {
+  font-size: 50px;
+  color: #1c2056;
+  line-height: 60px;
+  font-family: OpenSans, sans-serif;
+  font-weight: bold;
+  margin-top: 149px;
+  /* 154px - 5px(line height - fontsize)/2*/
+  max-width: 405px;
+}
+
+#jumbostron h2 {
+  font-size: 18px;
+  color: rgba(35, 45, 32, 0.65);
+  line-height: 40px;
+  margin-top: 38px;
+  /* 49px - 5px(line height - fontsize)/2[h1] -6px[h2]*/
+  max-width: 346px;
+}
+
+#main {
+  margin-top: 164px;
+}
+
+#main .wrap-outer {
+  font-size: 36px;
+  line-height: 50px;
+  font-family: OpenSans, sans-serif;
+  font-weight: bold;
+  max-width: 690px;
+  align-items: center;
+  text-align: center;
+  color: #263238;
+}
+
+.main-item {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+  height: 550px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification-image {
+  width: 164px;
+  height: 129px;
+}
+.hand-image {
+  width: 119px;
+  height: 150px;
+}
+.mountain-image {
+  width: 187px;
+  height: 108px;
+}
+
+.content {
+  padding: 69px 88px 68px 64px;
+  background-color: rgba(188, 143, 143, 0.377);
+  border-radius: 20px;
+}
+
+.content h4 {
+  font-size: 24px;
+  font-weight: 36px;
+  color: #263238;
+  font-family: OpenSans, sans-serif;
+  font-weight: bold;
+  margin-bottom: 38px;
+}
+
+.content p {
+  font-size: 17px;
+  line-height: 36px;
+  color: #546e7a;
+  font-family: OpenSans, sans-serif;
+  /* max-width: 378px; */
+}
